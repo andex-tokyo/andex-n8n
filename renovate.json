@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "config:recommended"
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": [
+        "kubernetes/n8n-deployment.yaml"
+      ],
+      "matchStrings": [
+        "image: n8nio/n8n:(?<currentValue>.*)"
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "n8nio/n8n",
+      "versioningTemplate": "semver",
+      "extractVersionTemplate": "^n8n@(?<version>\\d+\\.\\d+\\.\\d+)$"
+    }
+  ],
+  "assignees": [
+    "andex-tokyo"
+  ]
+}
