@@ -9,7 +9,7 @@
         "kubernetes/n8n-deployment.yaml"
       ],
       "matchStrings": [
-        "image: n8nio/n8n:(?<currentValue>.*)"
+        "image: n8n-io/n8n:(?<currentValue>.*)"
       ],
       "datasourceTemplate": "github-releases",
       "depNameTemplate": "n8nio/n8n",
