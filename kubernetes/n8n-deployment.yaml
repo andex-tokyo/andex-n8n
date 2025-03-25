@@ -144,7 +144,7 @@ spec:
             - name: N8N_PORT
               value: "5678"
             - name: WEBHOOK_URL
-              value: "https://n8n,andex.tokyo/"
+              value: "https://n8n.andex.tokyo/"
             - name: N8N_ENCRYPTION_KEY
               valueFrom:
                 secretKeyRef:
