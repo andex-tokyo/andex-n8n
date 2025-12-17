@@ -117,7 +117,7 @@ spec:
               mountPath: /data
       containers:
         - name: n8n
-          image: n8nio/n8n:1.111.1
+          image: n8nio/n8n:2.0.3
           command: ["/bin/sh"]
           args: ["-c", "sleep 10; n8n start"] # 増やしたsleep時間でPostgresの準備を待つ
           env:
