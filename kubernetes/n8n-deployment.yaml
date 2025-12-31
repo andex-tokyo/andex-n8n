@@ -97,7 +97,7 @@ metadata:
   name: n8n
   namespace: n8n
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       service: n8n
